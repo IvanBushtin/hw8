@@ -1,0 +1,55 @@
+@import "variables";
+@import "fonts";
+
+.header{
+  display: flex;
+  position: absolute;
+  max-width: 940px;
+  max-height: 300px;
+  width: 100%;
+  box-sizing: border-box;
+  left: 50%;
+  margin-left: -470px;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+.burger{
+  width: 40px;
+  height: 40px;
+  display: none;
+  margin: 10px 20px 0 0;
+  div {
+    height: 5px;
+    margin-bottom: 5px;
+    background-color: $first-text-color;
+  }
+}
+.nav {
+  li{
+    display: inline-block;
+    margin-right: 30px;
+    a{
+      color: $first-text-color;
+      font: 500 18px $primari-font;
+    }
+  }
+}
+@media only screen and (max-width: 760px), only screen and (max-device-width: 760px){
+  .nav{
+    li{
+      display: none;
+    }
+    .burger{
+      display: block;
+    }
+    &:hover {
+      .burger{
+        display: none;
+      }
+      li{
+        display: inline-block;
+      }
+    }
+  }
+}

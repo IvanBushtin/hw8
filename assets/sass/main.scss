@@ -1,0 +1,53 @@
+@import "variables";
+@import "header";
+@import "footer";
+@import "fonts";
+
+.we_can {
+  padding: 180px 0 125px;
+  background-image: url("../img/we.png");
+  background-size: cover;
+  text-align: center;
+  h3 {
+    margin: 0;
+    color: $first-text-color;
+    font: 300 32px $primari-font;
+  }
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 70px;
+    color: $first-text-color;
+    font: 700 66px $primari-font;
+  }
+  button {
+    width: 240px;
+    height: 65px;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+    color: $first-text-color;
+    font: 700 23px $primari-font;
+    &:hover {
+      border: 2px solid #000;
+    }
+  }
+}
+.services_list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    max-width: 550px;
+  }
+  h2{
+    color: $second-text-color;
+    font: 700 60px $primari-font;
+  }
+  p{
+    color: $p-color;
+    font: 400 18px $primari-font;
+  }
+}
+.identity{
+  background-color: #fafafa;
+}
