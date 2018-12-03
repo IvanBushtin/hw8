@@ -8,17 +8,22 @@
   background-image: url("../img/we.png");
   background-size: cover;
   text-align: center;
+
   h3 {
     margin: 0;
     color: $first-text-color;
-    font: 300 32px $primari-font;
+    font: 300 32px "Brandon Grotesque Light", sans-serif;
+    letter-spacing: -0.8px;
   }
+
   h1 {
     margin-top: 40px;
     margin-bottom: 70px;
     color: $first-text-color;
     font: 700 66px $primari-font;
+    letter-spacing: -1.65px;
   }
+
   button {
     width: 240px;
     height: 65px;
@@ -27,27 +32,155 @@
     cursor: pointer;
     color: $first-text-color;
     font: 700 23px $primari-font;
+
     &:hover {
       border: 2px solid #000;
     }
   }
 }
-.services_list{
+
+.cart_list {
   display: flex;
   justify-content: center;
   align-items: center;
-  div{
+
+  div {
     max-width: 550px;
   }
-  h2{
+
+  h2 {
+    margin: 0;
     color: $second-text-color;
-    font: 700 60px $primari-font;
+    font: 700 60px "Brandon Grotesque Bold", sans-serif;
   }
-  p{
+
+  p {
+    margin-top: 30px;
+    margin-bottom: 0;
     color: $p-color;
     font: 400 18px $primari-font;
+    letter-spacing: -0.45px;
+  }
+
+  span {
+    font-weight: 300;
+    font-family: "Brandon Grotesque Light", sans-serif;
+    letter-spacing: -1.5px;
   }
 }
-.identity{
+
+.web_develop {
+  padding: 100px 0;
+
+  img {
+    margin-left: 75px;
+  }
+}
+
+.identity {
+  padding: 100px 0;
   background-color: #fafafa;
+
+  img {
+    margin-right: 60px;
+  }
+}
+
+.services_list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 100px 0;
+
+  .services_list_items {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    max-width: 40%;
+    margin: 3%;
+
+    h4 {
+      margin: 0;
+      color: $second-text-color;
+      font: 500 22px $primari-font;
+      letter-spacing: -0.55px;
+    }
+
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: $p-color;
+      font: 400 18px $primari-font;
+      letter-spacing: -0.45px;
+    }
+
+    img {
+      margin-right: 20px;
+    }
+  }
+}
+
+.awesome_clients {
+  padding: 100px 0;
+  background-color: #fafafa;
+  text-align: center;
+
+  h2 {
+    margin: 0;
+    color: $second-text-color;
+    font: 700 60px "Brandon Grotesque Bold", sans-serif;
+
+    span {
+      font: 300 60px "Brandon Grotesque Light", sans-serif;
+      letter-spacing: -1.5px;
+    }
+  }
+
+  p {
+    margin: 20px 0 45px;
+    color: $p-color;
+    font: 400 22px $primari-font;
+    letter-spacing: -0.55px;
+  }
+
+  .awesome_list {
+    display: flex;
+    align-items: center;
+
+    .awesome_text {
+      padding: 40px 90px;
+      border: 1px solid #e8e8e8;
+      background-color: $first-text-color;
+      text-align: left;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: $p-color;
+      font: 400 26px $primari-font;
+      letter-spacing: -0.65px;
+    }
+
+    cite {
+      color: #7690c5;
+      font: 400 20px $primari-font;
+      letter-spacing: -0.5px;
+    }
+
+    img {
+      margin: 0 20px;
+    }
+  }
+}
+.logo2{
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  li{
+    margin: 0 40px;
+  }
 }

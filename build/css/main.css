@@ -109,12 +109,14 @@
   .we_can h3 {
     margin: 0;
     color: #fff;
-    font: 300 32px "Brandon Grotesque", sans-serif; }
+    font: 300 32px "Brandon Grotesque Light", sans-serif;
+    letter-spacing: -0.8px; }
   .we_can h1 {
     margin-top: 40px;
     margin-bottom: 70px;
     color: #fff;
-    font: 700 66px "Brandon Grotesque", sans-serif; }
+    font: 700 66px "Brandon Grotesque", sans-serif;
+    letter-spacing: -1.65px; }
   .we_can button {
     width: 240px;
     height: 65px;
@@ -126,18 +128,106 @@
     .we_can button:hover {
       border: 2px solid #000; }
 
-.services_list {
+.cart_list {
   display: flex;
   justify-content: center;
   align-items: center; }
-  .services_list div {
+  .cart_list div {
     max-width: 550px; }
-  .services_list h2 {
+  .cart_list h2 {
+    margin: 0;
     color: #222;
-    font: 700 60px "Brandon Grotesque", sans-serif; }
-  .services_list p {
+    font: 700 60px "Brandon Grotesque Bold", sans-serif; }
+  .cart_list p {
+    margin-top: 30px;
+    margin-bottom: 0;
     color: #777;
-    font: 400 18px "Brandon Grotesque", sans-serif; }
+    font: 400 18px "Brandon Grotesque", sans-serif;
+    letter-spacing: -0.45px; }
+  .cart_list span {
+    font-weight: 300;
+    font-family: "Brandon Grotesque Light", sans-serif;
+    letter-spacing: -1.5px; }
+
+.web_develop {
+  padding: 100px 0; }
+  .web_develop img {
+    margin-left: 75px; }
 
 .identity {
+  padding: 100px 0;
   background-color: #fafafa; }
+  .identity img {
+    margin-right: 60px; }
+
+.services_list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 100px 0; }
+  .services_list .services_list_items {
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    max-width: 40%;
+    margin: 3%; }
+    .services_list .services_list_items h4 {
+      margin: 0;
+      color: #222;
+      font: 500 22px "Brandon Grotesque", sans-serif;
+      letter-spacing: -0.55px; }
+    .services_list .services_list_items p {
+      margin-top: 10px;
+      margin-bottom: 0;
+      color: #777;
+      font: 400 18px "Brandon Grotesque", sans-serif;
+      letter-spacing: -0.45px; }
+    .services_list .services_list_items img {
+      margin-right: 20px; }
+
+.awesome_clients {
+  padding: 100px 0;
+  background-color: #fafafa;
+  text-align: center; }
+  .awesome_clients h2 {
+    margin: 0;
+    color: #222;
+    font: 700 60px "Brandon Grotesque Bold", sans-serif; }
+    .awesome_clients h2 span {
+      font: 300 60px "Brandon Grotesque Light", sans-serif;
+      letter-spacing: -1.5px; }
+  .awesome_clients p {
+    margin: 20px 0 45px;
+    color: #777;
+    font: 400 22px "Brandon Grotesque", sans-serif;
+    letter-spacing: -0.55px; }
+  .awesome_clients .awesome_list {
+    display: flex;
+    align-items: center; }
+    .awesome_clients .awesome_list .awesome_text {
+      padding: 40px 90px;
+      border: 1px solid #e8e8e8;
+      background-color: #fff;
+      text-align: left; }
+    .awesome_clients .awesome_list p {
+      margin-top: 0;
+      margin-bottom: 15px;
+      color: #777;
+      font: 400 26px "Brandon Grotesque", sans-serif;
+      letter-spacing: -0.65px; }
+    .awesome_clients .awesome_list cite {
+      color: #7690c5;
+      font: 400 20px "Brandon Grotesque", sans-serif;
+      letter-spacing: -0.5px; }
+    .awesome_clients .awesome_list img {
+      margin: 0 20px; }
+
+.logo2 {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+  .logo2 li {
+    margin: 0 40px; }
