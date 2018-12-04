@@ -1,7 +1,7 @@
 @import "variables";
 @import "fonts";
 
-.header{
+.header {
   display: flex;
   position: absolute;
   max-width: 940px;
@@ -14,40 +14,52 @@
   align-items: center;
   min-height: 60px;
 }
-.burger{
+
+.burger {
   width: 40px;
   height: 40px;
   display: none;
   margin: 10px 20px 0 0;
+
   div {
     height: 5px;
     margin-bottom: 5px;
     background-color: $first-text-color;
   }
 }
+
 .nav {
-  li{
+  li {
     display: inline-block;
     margin-right: 30px;
-    a{
+
+    a {
       color: $first-text-color;
       font: 500 18px $primari-font;
+
+      &:hover {
+        border-bottom: 2px solid $first-text-color;
+      }
     }
   }
 }
-@media only screen and (max-width: 760px), only screen and (max-device-width: 760px){
-  .nav{
-    li{
+
+@media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
+  .nav {
+    li {
       display: none;
     }
-    .burger{
+
+    .burger {
       display: block;
     }
+
     &:hover {
-      .burger{
+      .burger {
         display: none;
       }
-      li{
+
+      li {
         display: inline-block;
       }
     }

@@ -12,7 +12,7 @@
   h3 {
     margin: 0;
     color: $first-text-color;
-    font: 300 32px "Brandon Grotesque Light", sans-serif;
+    font: 300 32px $primari-font-light;
     letter-spacing: -0.8px;
   }
 
@@ -51,7 +51,7 @@
   h2 {
     margin: 0;
     color: $second-text-color;
-    font: 700 60px "Brandon Grotesque Bold", sans-serif;
+    font: 700 60px $primari-font-bold;
   }
 
   p {
@@ -64,7 +64,7 @@
 
   span {
     font-weight: 300;
-    font-family: "Brandon Grotesque Light", sans-serif;
+    font-family: $primari-font-light;
     letter-spacing: -1.5px;
   }
 }
@@ -74,6 +74,10 @@
 
   img {
     margin-left: 75px;
+    @media only screen and (max-width: 980px), only screen
+    and (max-device-width: 980px){
+      margin: 0;
+    }
   }
 }
 
@@ -83,6 +87,31 @@
 
   img {
     margin-right: 60px;
+    @media only screen and (max-width: 980px), only screen
+    and (max-device-width: 980px){
+      margin: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 980px), only screen
+and (max-device-width: 980px){
+  .web_develop{
+    padding: 20px 0;
+  }
+  .identity{
+    padding: 30px 0;
+  }
+  .cart_list{
+    flex-wrap: wrap;
+    text-align: center;
+    .web1{
+      order: 13;
+    }
+    div{
+      width: 100%;
+      margin-top: 30px;
+    }
   }
 }
 
@@ -97,8 +126,25 @@
     display: flex;
     justify-content: start;
     align-items: flex-start;
-    max-width: 40%;
+    width: 40%;
     margin: 3%;
+    @media only screen and (max-width: 720px), only screen
+    and (max-device-width: 720px){
+      width: 50%;
+      margin: 3%;
+    }
+    @media only screen and (max-width: 580px), only screen
+    and (max-device-width: 580px){
+      width: 70%;
+      margin: 1%;
+      align-items: center;
+    }
+    @media only screen and (max-width: 460px), only screen
+    and (max-device-width: 460px){
+      display: block;
+      margin: 20px;
+      text-align: center;
+    }
 
     h4 {
       margin: 0;
@@ -117,6 +163,10 @@
 
     img {
       margin-right: 20px;
+      @media only screen and (max-width: 460px), only screen
+      and (max-device-width: 460px){
+        margin: 10px 0;
+      }
     }
   }
 }
@@ -129,10 +179,10 @@
   h2 {
     margin: 0;
     color: $second-text-color;
-    font: 700 60px "Brandon Grotesque Bold", sans-serif;
+    font: 700 60px $primari-font-bold;
 
     span {
-      font: 300 60px "Brandon Grotesque Light", sans-serif;
+      font: 300 60px $primari-font-light;
       letter-spacing: -1.5px;
     }
   }
@@ -174,13 +224,170 @@
     }
   }
 }
-.logo2{
+
+.logo2 {
   padding: 60px 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center;
-  li{
-    margin: 0 40px;
+
+  li {
+    margin: 0 30px;
   }
 }
+
+.amazing_team {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #111;
+
+  h2 {
+    margin: 0;
+    color: $first-text-color;
+    font: 400 60px $primari-font-bold;
+
+    span {
+      font: 300 60px $primari-font-light;
+      letter-spacing: -1.5px;
+    }
+  }
+
+  .amazing_p1 {
+    margin: 5px 0;
+    color: $p-color;
+    font: 400 22px $primari-font;
+    letter-spacing: -0.55px;
+  }
+
+  .amazing_p2 {
+    max-width: 800px;
+    margin: 0 auto;
+    color: $first-text-color;
+    font: 400 28px $primari-font-light;
+    letter-spacing: -0.5px;
+  }
+
+  .social_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px 0 50px;
+
+    li {
+      margin: 30px;
+    }
+
+    h6 {
+      margin: 20px 0 10px;
+      color: $first-text-color;
+      font: 700 18px $primari-font-bold;
+      letter-spacing: -0.45px;
+
+      span {
+        display: block;
+        color: $p-color;
+        font: 400 18px $primari-font-light;
+        letter-spacing: -0.4px;
+      }
+    }
+
+    .social_icons {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      padding-top: 12px;
+      background-image: url("../img/social_background.png");
+      background-repeat: no-repeat;
+      color: $first-text-color;
+    }
+  }
+}
+
+.contact {
+  padding: 100px 0;
+  background-color: #7690c5;
+  .contact_list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.say_hello {
+  h2 {
+    margin: 0;
+    color: $first-text-color;
+    font: 700 60px $primari-font-bold;
+    letter-spacing: -1.5px;
+
+    span {
+      font: 300 60px $primari-font-light;
+    }
+  }
+
+  p {
+    max-width: 420px;
+    color: $first-text-color;
+    font: 400 18px $primari-font-light;
+    letter-spacing: -0.45px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    li {
+      width: 40%;
+      margin: 20px 10px 10px 0;
+      display: flex;
+      align-items: center;
+      text-align: center;
+    }
+
+    i {
+      width: 50px;
+      color: $first-text-color;
+    }
+
+    span {
+      display: inline-block;
+      color: $first-text-color;
+      font: 400 18px $primari-font-light;
+    }
+  }
+}
+
+.contact_form {
+  width: 50%;
+  .form_input {
+    width: 456px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: $p-color;
+    font: 500 18px $primari-font;
+    letter-spacing: -0.45px;
+  }
+
+  .text_area {
+    width: 456px;
+    max-width: 480px;
+    min-width: 400px;
+    max-height: 300px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: $p-color;
+    font: 500 18px $primari-font;
+    letter-spacing: -0.45px;
+  }
+}
+

@@ -1,11 +1,12 @@
 $primari-font: 'Brandon Grotesque', sans-serif;
+$primari-font-bold: 'Brandon Grotesque Bold', sans-serif;
+$primari-font-light: 'Brandon Grotesque Light', sans-serif;
 $first-text-color: #fff;
 $second-text-color: #222;
 $p-color: #777;
 
 .container{
   max-width: 940px;
-  min-height: 300px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;

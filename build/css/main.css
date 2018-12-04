@@ -1,13 +1,11 @@
 .container {
   max-width: 940px;
-  min-height: 300px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box; }
 
 .container {
   max-width: 940px;
-  min-height: 300px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box; }
@@ -62,8 +60,10 @@
   .nav li a {
     color: #fff;
     font: 500 18px "Brandon Grotesque", sans-serif; }
+    .nav li a:hover {
+      border-bottom: 2px solid #fff; }
 
-@media only screen and (max-width: 760px), only screen and (max-device-width: 760px) {
+@media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
   .nav li {
     display: none; }
   .nav .burger {
@@ -75,10 +75,21 @@
 
 .container {
   max-width: 940px;
-  min-height: 300px;
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box; }
+
+footer {
+  text-align: center;
+  background-color: #7690c5;
+  padding-bottom: 30px; }
+  footer .footer_border {
+    border-top: 1px solid #87a0d2; }
+  footer p {
+    margin-top: 30px;
+    color: #fff;
+    font: 500 16px "Brandon Grotesque", sans-serif;
+    letter-spacing: -0.4px; }
 
 @font-face {
   font-family: 'Brandon Grotesque Bold';
@@ -153,12 +164,32 @@
   padding: 100px 0; }
   .web_develop img {
     margin-left: 75px; }
+    @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
+      .web_develop img {
+        margin: 0; } }
 
 .identity {
   padding: 100px 0;
   background-color: #fafafa; }
   .identity img {
     margin-right: 60px; }
+    @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
+      .identity img {
+        margin: 0; } }
+
+@media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
+  .web_develop {
+    padding: 20px 0; }
+  .identity {
+    padding: 30px 0; }
+  .cart_list {
+    flex-wrap: wrap;
+    text-align: center; }
+    .cart_list .web1 {
+      order: 13; }
+    .cart_list div {
+      width: 100%;
+      margin-top: 30px; } }
 
 .services_list {
   display: flex;
@@ -170,8 +201,22 @@
     display: flex;
     justify-content: start;
     align-items: flex-start;
-    max-width: 40%;
+    width: 40%;
     margin: 3%; }
+    @media only screen and (max-width: 720px), only screen and (max-device-width: 720px) {
+      .services_list .services_list_items {
+        width: 50%;
+        margin: 3%; } }
+    @media only screen and (max-width: 580px), only screen and (max-device-width: 580px) {
+      .services_list .services_list_items {
+        width: 70%;
+        margin: 1%;
+        align-items: center; } }
+    @media only screen and (max-width: 460px), only screen and (max-device-width: 460px) {
+      .services_list .services_list_items {
+        display: block;
+        margin: 20px;
+        text-align: center; } }
     .services_list .services_list_items h4 {
       margin: 0;
       color: #222;
@@ -185,6 +230,9 @@
       letter-spacing: -0.45px; }
     .services_list .services_list_items img {
       margin-right: 20px; }
+      @media only screen and (max-width: 460px), only screen and (max-device-width: 460px) {
+        .services_list .services_list_items img {
+          margin: 10px 0; } }
 
 .awesome_clients {
   padding: 100px 0;
@@ -227,7 +275,123 @@
   padding: 60px 0;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
   align-items: center; }
   .logo2 li {
-    margin: 0 40px; }
+    margin: 0 30px; }
+
+.amazing_team {
+  text-align: center;
+  padding: 100px 0;
+  background-color: #111; }
+  .amazing_team h2 {
+    margin: 0;
+    color: #fff;
+    font: 400 60px "Brandon Grotesque Bold", sans-serif; }
+    .amazing_team h2 span {
+      font: 300 60px "Brandon Grotesque Light", sans-serif;
+      letter-spacing: -1.5px; }
+  .amazing_team .amazing_p1 {
+    margin: 5px 0;
+    color: #777;
+    font: 400 22px "Brandon Grotesque", sans-serif;
+    letter-spacing: -0.55px; }
+  .amazing_team .amazing_p2 {
+    max-width: 800px;
+    margin: 0 auto;
+    color: #fff;
+    font: 400 28px "Brandon Grotesque Light", sans-serif;
+    letter-spacing: -0.5px; }
+  .amazing_team .social_list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 70px 0 50px; }
+    .amazing_team .social_list li {
+      margin: 30px; }
+    .amazing_team .social_list h6 {
+      margin: 20px 0 10px;
+      color: #fff;
+      font: 700 18px "Brandon Grotesque Bold", sans-serif;
+      letter-spacing: -0.45px; }
+      .amazing_team .social_list h6 span {
+        display: block;
+        color: #777;
+        font: 400 18px "Brandon Grotesque Light", sans-serif;
+        letter-spacing: -0.4px; }
+    .amazing_team .social_list .social_icons {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin: 5px;
+      padding-top: 12px;
+      background-image: url("../img/social_background.png");
+      background-repeat: no-repeat;
+      color: #fff; }
+
+.contact {
+  padding: 100px 0;
+  background-color: #7690c5; }
+  .contact .contact_list {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.say_hello h2 {
+  margin: 0;
+  color: #fff;
+  font: 700 60px "Brandon Grotesque Bold", sans-serif;
+  letter-spacing: -1.5px; }
+  .say_hello h2 span {
+    font: 300 60px "Brandon Grotesque Light", sans-serif; }
+
+.say_hello p {
+  max-width: 420px;
+  color: #fff;
+  font: 400 18px "Brandon Grotesque Light", sans-serif;
+  letter-spacing: -0.45px; }
+
+.say_hello ul {
+  display: flex;
+  flex-wrap: wrap; }
+  .say_hello ul li {
+    width: 40%;
+    margin: 20px 10px 10px 0;
+    display: flex;
+    align-items: center;
+    text-align: center; }
+  .say_hello ul i {
+    width: 50px;
+    color: #fff; }
+  .say_hello ul span {
+    display: inline-block;
+    color: #fff;
+    font: 400 18px "Brandon Grotesque Light", sans-serif; }
+
+.contact_form {
+  width: 50%; }
+  .contact_form .form_input {
+    width: 456px;
+    height: 50px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #777;
+    font: 500 18px "Brandon Grotesque", sans-serif;
+    letter-spacing: -0.45px; }
+  .contact_form .text_area {
+    width: 456px;
+    max-width: 480px;
+    min-width: 400px;
+    max-height: 300px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #777;
+    font: 500 18px "Brandon Grotesque", sans-serif;
+    letter-spacing: -0.45px; }

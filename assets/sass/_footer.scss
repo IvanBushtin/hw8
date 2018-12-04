@@ -1,1 +1,17 @@
 @import "variables";
+
+footer {
+  text-align: center;
+  background-color: #7690c5;
+  padding-bottom: 30px;
+  .footer_border {
+    border-top: 1px solid #87a0d2;
+  }
+  p {
+    margin-top: 30px;
+    color: $first-text-color;
+    font: 500 16px $primari-font;
+    letter-spacing: -0.4px;
+  }
+
+}
