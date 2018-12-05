@@ -12,6 +12,9 @@ footer {
     color: $first-text-color;
     font: 500 16px $primari-font;
     letter-spacing: -0.4px;
+    @media only screen and (max-width: 576px), only screen and (max-device-width: 576px) {
+      font-size: 30px;
+    }
   }
 
 }
