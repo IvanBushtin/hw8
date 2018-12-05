@@ -48,7 +48,8 @@
   width: 40px;
   height: 40px;
   display: none;
-  margin: 10px 20px 0 0; }
+  margin: 10px 20px 0 0;
+  cursor: pointer; }
   .burger div {
     height: 5px;
     margin-bottom: 5px;
@@ -64,14 +65,10 @@
       border-bottom: 2px solid #fff; }
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
-  .nav li {
+  .nav {
     display: none; }
-  .nav .burger {
-    display: block; }
-  .nav:hover .burger {
-    display: none; }
-  .nav:hover li {
-    display: inline-block; } }
+  .burger {
+    display: block; } }
 
 .container {
   max-width: 940px;

@@ -20,6 +20,7 @@
   height: 40px;
   display: none;
   margin: 10px 20px 0 0;
+  cursor: pointer;
 
   div {
     height: 5px;
@@ -46,22 +47,9 @@
 
 @media only screen and (max-width: 980px), only screen and (max-device-width: 980px) {
   .nav {
-    li {
       display: none;
     }
-
-    .burger {
-      display: block;
-    }
-
-    &:hover {
-      .burger {
-        display: none;
-      }
-
-      li {
-        display: inline-block;
-      }
-    }
+  .burger {
+    display: block;
   }
 }

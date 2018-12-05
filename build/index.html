@@ -15,12 +15,12 @@
             <a href="index.html"><img src="img/logo.png" alt="logo"></a>
         </div>
         <nav>
-            <ul class="nav">
-                <div class="burger">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </div>
+            <div id="toggle-button" class="burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <ul class="nav" id="toggle-menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
                 <li><a href="#">Clients</a></li>
@@ -240,7 +240,8 @@
                 <input type="email" id="email" class="form_input" placeholder="Your E-mail*" required>
             </label>
             <label for="message">
-                <textarea name="message" id="message" class="text_area" cols="30" rows="10" placeholder="Your Message*"></textarea>
+                <textarea name="message" id="message" class="text_area" cols="30" rows="10"
+                          placeholder="Your Message*"></textarea>
             </label>
         </form>
     </div>
@@ -251,5 +252,7 @@
         <p>© 2014 Escape by FreebiesXpress • Made In Toronto</p>
     </div>
 </footer>
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 </body>
 </html>
